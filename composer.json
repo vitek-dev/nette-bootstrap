@@ -1,0 +1,21 @@
+{
+    "name": "vitek-dev/nette-bootstrap",
+    "description": "Simple pre-configuration for nette/bootstrap",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "VitekDev\\Nette\\Bootstrap\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Daniel Vitek",
+            "email": "daniel@vitek.dev"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "nette/bootstrap": "^3.2"
+    }
+}
