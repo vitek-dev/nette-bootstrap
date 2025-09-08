@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace VitekDev\Nette\Bootstrap;
 
-use Nette\Bootstrap\Configurator;
+use Nette\Bootstrap\Configurator as NetteConfigurator;
 
-class Bootstrap
+class Configurator
 {
-    public static function boot(string $projectRoot): Configurator
+    public static function preconfigure(string $projectRoot): NetteConfigurator
     {
-        $configurator = new Configurator();
+        $configurator = new NetteConfigurator();
 
         $configurator->addStaticParameters(['projectRoot' => $projectRoot]);
         $configurator->addDynamicParameters(['env' => getenv()]);
